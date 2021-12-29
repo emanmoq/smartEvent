@@ -905,12 +905,12 @@ padding-bottom: 60px;;
     top: 80%;
 }
 .nav.nav-pills .nav-link {
-    padding: 11px 8px;
+    padding: 11px 5px;
 font-size:.9em;
 
 }
 .nav.nav-pills .nav-item{
-    margin-left:8px;
+    margin-left:5px;
 }
 
 .galleryImg img{
@@ -937,6 +937,12 @@ font-size:.9em;
 }
 .organizeBtn{
     float:none;
+}
+.contactList li{
+    margin-left: 16px
+}
+.contactList {
+    text-align: right;
 }
 }
 @media(min-width:768px) and (max-width:1024px){
