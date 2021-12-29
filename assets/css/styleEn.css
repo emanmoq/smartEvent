@@ -177,7 +177,9 @@ ul{
     left: 0;
     top: -57px;
     width: 16%;
-    z-index: -1;}
+    z-index: -1;
+    transform: rotate(
+        255deg);}
 .heroObject2{
     top:auto;
     bottom: 0;
@@ -256,8 +258,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     padding:200px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
-    position: relative;
+    clip-path: polygon(0 0, 100% 32%, 100% 100%, 0% 100%);    position: relative;
     z-index: 1;
     background-color:transparent;
     margin-top:-225px;
