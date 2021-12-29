@@ -18,6 +18,26 @@
     font-family: "Avenir-Regular";
     src: url("../fonts/alfont_com_AlFont_com_Avenir-Regular.otf");
 }
+/**** whatsIcon *******/ 
+.floatwhatsIcon{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.floatwhatsIcon i{
+    font-size: 32px;
+    color: white;
+    margin-top: 12px;
+    }
+
 /**** Loader ***/
 .loader,
         .loader:after {
@@ -82,6 +102,7 @@ body{
     text-align: right;
     font-family: "Bahij_TheSansArabic-Light";
     overflow-x: hidden;
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -943,6 +964,9 @@ font-size:.9em;
 }
 .contactList {
     text-align: right;
+}
+.heroText{
+    padding-right:0;
 }
 }
 @media(min-width:768px) and (max-width:1024px){
