@@ -106,7 +106,17 @@ jQuery(function ($) {
   //close menu when choose item
   $(".navbar .nav-link").click(function(){
     $(".collapse").removeClass("show");
-  })
+  });
+
+  $(window).on('load', function(){
+    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+  });
+  function removeLoader(){
+      $( "#loadingDiv" ).fadeOut(500, function() {
+        // fadeOut complete. Remove the loading div
+        $( "#loadingDiv" ).remove(); //makes page more lightweight 
+    });  
+  }
 });
 
 

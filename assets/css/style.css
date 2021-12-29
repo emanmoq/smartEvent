@@ -18,6 +18,59 @@
     font-family: "Avenir-Regular";
     src: url("../fonts/alfont_com_AlFont_com_Avenir-Regular.otf");
 }
+/**** Loader ***/
+.loader,
+        .loader:after {
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+        .loader {            
+            margin: 60px auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-left: 1.1em solid #ac2ca1;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+        }
+        @-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        #loadingDiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            color: #000;
+        }
+/***** public**************/
 img{
     width: 100%;
 }
@@ -37,6 +90,7 @@ a:hover{
     text-decoration: none;
     color:#000
 }
+/********* header **********/
 header{
     height:97px;
     background-color: white;
@@ -60,7 +114,7 @@ ul{
 .navbar-expand-lg .navbar-nav .nav-link:hover{
     color:#ac2ca1;
 }
-.contactBtn{
+.contactBtn,.organizeBtn{
     float:left;
     background-color: #ac2ca1;
     width:149px;
@@ -71,7 +125,15 @@ ul{
     margin:auto ;
     border-radius: 0;
     font-family: "Bahij_TheSansArabic-SemiBold";
-
+}
+.organizeBtn{
+    background-color: #f69c01;
+    border:1px solid #f69c01;
+    margin-left:15px
+}
+.organizeBtn:hover{
+    background-color: transparent;
+    transition: all .5s;;
 }
 .contactBtn:hover,.contactBtn:focus{
     box-shadow: none;
@@ -168,10 +230,9 @@ ul{
     display: inline-block;
     margin-left:17px;
     float: none;
-    line-height: 35px;;
+    line-height: 42px;;
 
 }
-
 .servicesBtn{
 width:179px;
 height:55px;
@@ -179,7 +240,7 @@ background-color: #f69c01;
 color:white;
 border:1px solid #f69c01;
 transition: all .5s;
-line-height: 35px;
+line-height: 42px;
 border-radius:  0;
 font-family: "Bahij_TheSansArabic-SemiBold";
 
@@ -199,7 +260,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     position: relative;
     z-index: 1;
     background-color:transparent;
-    margin-top:-190px;
+    margin-top:-225px;
     background-image: url("../images/introBG.png");
 }
 
@@ -595,7 +656,7 @@ transition: all .5s;
 }
 .contactList{
     list-style-type: none;
-
+    text-align: center;
 }
 .contactList li{
     display: inline-block;
@@ -617,12 +678,14 @@ transition: all .5s;
 font-size:1.125em;
 color:000000;
 font-family: "Bahij_TheSansArabic-SemiBold";
-margin-bottom: 5px;;
+margin-bottom: 5px;
+text-align: right;
 }
 .contactDetails h5{
     font-size:.8em;
     color:000000;
     font-family: "Bahij_TheSansArabic-SemiBold";
+    text-align: right;
 }
 #map {
     position: absolute;
