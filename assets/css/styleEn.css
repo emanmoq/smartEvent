@@ -186,6 +186,8 @@ ul{
     right:0;
     left:auto;
     width:30%;
+    transform: rotate3d(0, 1, 0, 
+180deg);
 }
 .heroSlider .owl-dots{
     position: absolute;
@@ -256,14 +258,25 @@ font-family: "Bahij_TheSansArabic-SemiBold";
 /****** Introduction Section ******/
 .introSection{
     padding:200px 0;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 32%, 100% 100%, 0% 100%);    position: relative;
     z-index: 1;
     background-color:transparent;
     margin-top:-225px;
-    background-image: url("../images/introBG.png");
 }
+.introSection:before{
+    position: absolute;
+    content:"";
+    background-image: url("../images/introBG.png");
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    transform: rotate3d(0, 1, 0, 
+    180deg);
+}
+
 
 .introText h4{
     font-family:"TheSansArabic-Bold" ;
