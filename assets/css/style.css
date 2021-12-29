@@ -83,6 +83,23 @@ ul{
 .navbar-nav{
     float: right;
 }
+.scrollNav {
+    top: 0 !important;
+    z-index: 555;
+    animation-duration: .5s;
+    background-color:white;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    right:0;
+    transition: all .5s;;
+    animation:sticky;
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    color:#ac2ca1
+}
 /******** Hero Section **********/
 .hero{
     position: relative;
@@ -220,6 +237,16 @@ color:white;
 .servicesSection{
     padding-top:55px;
     padding-bottom:70px;
+    background-color: transparent;
+    position: relative;
+}
+.serviceBG{
+    position: absolute;
+    top:20%;
+    left:0;
+    width:100%;
+    background-repeat: no-repeat;
+ 
 }
 .servicesBox{
     background-image: url("../images/serviceBoxBG.png");
@@ -760,5 +787,18 @@ padding-bottom: 60px;;
     top: 80%;
 }
 .nav.nav-pills .nav-link {
-    padding: 11px 10px;}
+    padding: 11px 8px;
+font-size:.9em;
+
+}
+.nav.nav-pills .nav-item{
+    margin-left:8px;
+}
+
+.galleryImg img{
+    height: auto;
+}
+.gallerySection,.servicesSection,.ourValuable{
+    padding:20px 0
+}
 }
