@@ -170,14 +170,16 @@ font-family: "Bahij_TheSansArabic-SemiBold";
 /****** Introduction Section ******/
 .introSection{
     padding:200px 0;
-    background-image: url("../images/introBG.png");
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
     z-index: 1;
-    top:-222px;;
+    background-color:transparent;
+    margin-top:-190px;
+    background-image: url("../images/introBG.png");
 }
+
 .introText h4{
     font-family:"TheSansArabic-Bold" ;
     font-size:2em;
@@ -715,7 +717,7 @@ padding-bottom: 60px;;
     margin-top:80px;
 }
 /********* Responsive ***********/ 
-@media(max-width:767px){
+@media(max-width:850px){
     .navbar-nav{
         float:none;
     }
@@ -761,10 +763,10 @@ padding-bottom: 60px;;
         font-size:12px
     }
     .ValuableBox {
-        width:100%;
-        margin-left:0;
-        margin-bottom: 20px;;
+        width:43%;
+        margin-bottom: 20px;
     }
+
     .contactBox{
         padding:20px;
     }
@@ -800,5 +802,21 @@ font-size:.9em;
 }
 .gallerySection,.servicesSection,.ourValuable{
     padding:20px 0
+}
+.introSection{
+    padding-bottom: 50px
+}
+.serviceBG{
+    display: none;;
+}
+.footerLinks{
+    margin-top:20px;
+}
+.hero .contactBtn ,.servicesBtn{
+    width:160
+}
+.hero{
+    padding-top:50px;
+    padding-bottom: 100px;
 }
 }
