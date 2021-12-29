@@ -5,7 +5,7 @@ jQuery(function ($) {
     loop: true,
     margin: 0,
     rtl: true,
-    dots: false,
+    dots: true,
     items: 1
   });
   $(".gallerySlider").owlCarousel({
@@ -107,7 +107,6 @@ jQuery(function ($) {
   $(".navbar .nav-link").click(function(){
     $(".collapse").removeClass("show");
   })
-
 });
 
 
