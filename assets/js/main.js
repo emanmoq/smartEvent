@@ -112,9 +112,9 @@ jQuery(function ($) {
     setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
   });
   function removeLoader(){
-      $( ".lds-roller" ).fadeOut(500, function() {
+      $( ".loaderPage" ).fadeOut(500, function() {
         // fadeOut complete. Remove the loading div
-        $( ".lds-roller" ).remove(); //makes page more lightweight 
+        $( ".loaderPage" ).remove(); //makes page more lightweight 
     });  
   }
 });
