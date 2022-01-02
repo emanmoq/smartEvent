@@ -20,7 +20,7 @@
 }
 
 /********* whats Icon **********/ 
-a.floatwhatsIcon{
+.floatwhatsIcon{
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -358,6 +358,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     text-align: center;
     height:280px;
     transition:all .5s;
+    margin-bottom:20px;
 }
 .ValuableBox:hover{
     box-shadow:  20px  0 55px  rgba(0,0,0,.1);
@@ -905,6 +906,151 @@ padding-bottom: 60px;;
     text-align: center;
     margin-top:80px;
 }
+.innerHeader{
+    padding:30px 0;
+    position: relative;
+    background-image: url("../images/innerBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;;
+    z-index: 0;
+    }
+    .innerHeader:before{
+        content:"";
+        background-color:rgba(0,0,0,.8);
+        width:100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: -1;
+    }
+    .innerIntroSection.introSection{
+        background-image: url("../images/inner.png");
+        margin-top:0;
+        clip-path: none;
+        padding-top:100px;
+    }
+    .breadcrumb-item a{
+        font-size:1.5em;
+        color:white;
+    }
+    .breadcrumb-item.active{
+        font-size:1.5em;
+        color:#ac2ca1;
+        font-family: "Bahij_TheSansArabic-SemiBold";
+    }
+    .breadcrumb{
+        background-color:transparent;
+        justify-content: center;
+    }
+    .breadcrumb-item a:hover{
+    color: #f69c01;
+    
+    }
+    .innerHeader nav{
+        margin:auto;
+    }
+    .innerTitle{
+        text-align: center;
+        font-size:2.625em;
+        color:white;
+        margin-bottom:20px;
+        font-family: "Bahij_TheSansArabic-SemiBold";
+    
+    }
+    .innerClients{
+        clip-path: unset;
+    padding-top:100px
+    }
+    .innerBox{
+        padding:20px;
+        background-color:white;
+        box-shadow: 1px 0 55px rgba(0, 0, 0, .1);
+    }
+    .privecyMenu{
+    margin-top:20px;
+    padding-left:20px;
+    
+    }
+    .privecyMenu li{ 
+    margin-bottom:20px;
+    padding-left:10px;
+    list-style-type:auto;
+    }
+    .innerBox h3{
+        font-family: "Bahij_TheSansArabic-SemiBold";
+    
+        font-size:1.5em;
+    }
+    .innerContact #map{
+    position: relative;
+    }
+    .serviceSide{
+        box-shadow: 0 0 10px rgb(175 175 175 / 23%);
+        padding:20px;
+        margin-bottom: 20px;;
+    }
+    .serviceDetails{
+    padding-top:100px;
+    padding-bottom:100px;}
+    .servTitle{
+        font-family: "Bahij_TheSansArabic-SemiBold";
+        padding: 17px 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.4em;
+        font-weight: 600;
+        border-bottom: 1px solid #f1f1f1;
+        color: #ac2ca1;
+    }
+    .servicesArchive {
+        padding: 20px 0px 20px 20px;
+    }
+    .servicesArchive li{
+        list-style-type: none;
+        margin-bottom: 25px;
+        display: block;
+        padding-left: 10px;
+    }
+    .servicesArchive li .serviceImg{
+        width:20px;
+        margin:0;
+        margin-right:10px;
+        float:left
+    }
+    .servicesArchive li a{
+       color: #888;
+       font-family: "Bahij_TheSansArabic-SemiBold";
+       font-size:1.2em
+    
+    }
+    .servicesArchive li :hover {
+        color:#f69c01
+    }
+    .serviceDetailsImg{
+        max-height:300px;
+        overflow: hidden;
+    }
+    .detailsBox{
+        box-shadow: 0 0 10px rgb(175 175 175 / 23%);
+    }
+    .serviceDetails{
+        padding:20px
+    }
+    .serviceDetails h4{
+        font-size:1.5em;
+        color:#888;
+        font-family: "Bahij_TheSansArabic-SemiBold";
+    margin-bottom: 20px;   
+    }
+    .serviceDetails p{
+        font-size: .9em;
+        color: #999;
+        line-height: 2;
+    }
+    .detailsBox:hover .serviceDetails h4{
+        color:#ac2ca1
+    }
 /********* Responsive ***********/ 
 @media(max-width:767px){
     .navbar-nav{

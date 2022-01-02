@@ -354,6 +354,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     text-align: center;
     height:280px;
     transition:all .5s;
+    margin-bottom: 20px;;
 }
 .ValuableBox:hover{
     box-shadow:  20px  0 55px  rgba(0,0,0,.1);
