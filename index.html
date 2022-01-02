@@ -800,17 +800,20 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
-  <script src="/front/js/function.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5oGPDKmIj6tWRsGPlqNQ7QzWXxrn1OjM&callback=initMap"></script>
 
   <script>
     function initMap() {
-      var uluru = { lat: 24.31282, lng: 47.15726 };
+      const myLatLng  = { lat: 24.31282, lng: 47.15726 };
 
-      var map;
-      var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
-
+      const map = new google.maps.Map(
+    document.getElementById("map") ,
+    {
+      zoom: 4,
+      center: myLatLng,
+    }
+  );
       var stylez = [
         {
           featureType: "all",
@@ -821,20 +824,13 @@
         }
       ];
 
-      var mapOptions = {
-        zoom: 11,
-        center: brooklyn,
-        mapTypeControlOptions: {
-          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
-        }
-      };
-
       var marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
+        position: myLatLng ,
+        map,
+        icon: 'assets/images/marker.png'
       });
 
-      map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
 
       var mapType = new google.maps.StyledMapType(stylez, { name: "Grayscale" });
       map.mapTypes.set('tehgrayz', mapType);
@@ -843,10 +839,7 @@
   </script>
   <script type="text/javascript" src="assets/lightbox/js/lightbox.js"></script>
 
-
   <script type="text/javascript" src="assets/js/main.js"></script>
-
-
 </body>
 
 </html>
