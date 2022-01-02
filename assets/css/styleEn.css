@@ -710,7 +710,8 @@ transition: all .5s;
 /*********** contact **********/
 .contactSection{
     position: relative;
-    padding-bottom: 200px;;
+    padding-bottom: 350px;
+    overflow: hidden;
 }
 .contactBox{
     background-color: white;
@@ -765,7 +766,7 @@ text-align: left;
     z-index: 1;
     top:0;
     left:0;
-    width: 100%;height: 100%;;
+    width: 100%;height: 120%;;
 }
 .contactForm{
     margin-top:50px;
