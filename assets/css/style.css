@@ -56,7 +56,7 @@
     width: 100px;
     height: 100px;
     margin:auto;
-    top:30%;
+    top:45%;
     right:45%;
   }
   .lds-default div {
@@ -176,7 +176,7 @@ ul{
 .navbar-expand-lg .navbar-nav .nav-link{
     font-family: "Bahij_TheSansArabic-SemiBold";
     font-size: 1em;
-    color:202020;
+    color:#202020;
     padding:0 17px;
 }
 .navbar-expand-lg .navbar-nav .nav-link:hover{
@@ -211,6 +211,28 @@ ul{
     background-color: transparent;
     color:#ac2ca1;
     transition: all .5s;;
+}
+.lang{
+    width:50px;
+    border:1px solid #999;
+    float:right;
+    margin-left:10px;
+    text-align: center;
+    transition: all .5s;
+    font-family: "Bahij_TheSansArabic-SemiBold";
+    font-size: 1em;
+    color:#202020;
+    border-radius: 0;
+
+}
+.lang:hover{
+    background-color:#8b8e91;
+    color:white;
+    transition: all .5s;
+}
+.btn:focus{
+    border:0;
+    box-shadow: none;
 }
 .navbar-nav{
     float: right;
@@ -383,12 +405,15 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     font-family: "Bahij_TheSansArabic-SemiBold";
     margin-bottom: 35px;;
 }
-.ValuableBox span svg{
-    fill:white;
-}
-.ValuableBox span  {
+.ValuableBoxImg{
+    max-width:50px;
+    margin:auto;
     margin-bottom: 25px;
-    display: block;
+    height:55px;
+}
+.ValuableBoxImg img{
+    height:100%;
+    width: auto;;
 }
 .ValuableBox h5{
 font-size:1.125em;
@@ -1008,6 +1033,7 @@ font-size:.9em;
 .organizeBtn{
     float:none;
 }
+
 .contactList li{
     margin-left: 16px
 }
