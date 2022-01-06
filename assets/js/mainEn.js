@@ -5,7 +5,8 @@ jQuery(function ($) {
     loop: true,
     margin: 0,
     dots: true,
-    items: 1
+    items: 1,
+    nav:true
   });
   $(".gallerySlider").owlCarousel({
     autoplay: true,

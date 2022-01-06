@@ -339,7 +339,26 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     transition: all .5s;;
 
 }
-
+.heroSlider .owl-nav{
+    position: absolute;
+    top:45%;
+    width:100%;
+}
+.heroSlider.owl-carousel .owl-nav button.owl-next, .heroSlider.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left:10%;
+}
+.heroSlider .owl-nav button:hover span{
+    color:#ac2ca1
+}
+.heroSlider .owl-nav button span{
+    font-size:70px;
+    color:white;
+}
+.heroSlider.owl-carousel .owl-nav button.owl-next{
+    left:auto;
+    right:10%;
+}
 /****** Introduction Section ******/
 .introSection{
     padding:200px 0;

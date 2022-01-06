@@ -351,7 +351,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
 }
 .heroSlider .owl-nav{
     position: absolute;
-    top:50%;
+    top:45%;
     width:100%;
 }
 .heroSlider.owl-carousel .owl-nav button.owl-next, .heroSlider.owl-carousel .owl-nav button.owl-prev{
@@ -365,7 +365,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     font-size:70px;
     color:white;
 }
-.heroSlider.owl-carousel .owl-nav button.owl-nextt{
+.heroSlider.owl-carousel .owl-nav button.owl-next{
     right:auto;
     left:10%;
 }
