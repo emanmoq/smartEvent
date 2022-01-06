@@ -1014,6 +1014,9 @@ padding-bottom: 60px;;
 .heroSlider .owl-dots{
     bottom:60px;
 }
+.lds-default{
+    right:34%;
+}
     .contactBox{
         padding:20px;
     }
