@@ -371,7 +371,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
 }
 /****** Introduction Section ******/
 .introSection{
-    padding:180px 0;
+    padding:100px 0;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -1052,9 +1052,8 @@ font-size:.9em;
 .hero .contactBtn ,.servicesBtn{
     width:160
 }
-.hero{
-    padding-top:50px;
-    padding-bottom: 100px;
+.heroSliderItem{
+    padding:50px 0;
 }
 .organizeBtn{
     float:none;
