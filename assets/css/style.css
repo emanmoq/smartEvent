@@ -274,6 +274,8 @@ ul{
     width: 100%;height: 100%;
     background-color:rgba(0,0,0,.8);
     z-index:-1;
+    top:0;
+    left:0;
 }
 .heroSlider .owl-dots{
     position: absolute;
@@ -294,7 +296,6 @@ ul{
 }
 .heroText{
     padding-top:200px;
-
     text-align: center;
 }
 .heroText span{
@@ -1003,7 +1004,16 @@ padding-bottom: 60px;;
         width:43%;
         margin-bottom: 20px;
     }
-
+.heroText{
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.heroSliderItem{
+    padding-bottom: 50px;
+}
+.heroSlider .owl-dots{
+    bottom:60px;
+}
     .contactBox{
         padding:20px;
     }
@@ -1052,9 +1062,7 @@ font-size:.9em;
 .hero .contactBtn ,.servicesBtn{
     width:160
 }
-.heroSliderItem{
-    padding:50px 0;
-}
+
 .organizeBtn{
     float:none;
 }
@@ -1065,9 +1073,7 @@ font-size:.9em;
 .contactList {
     text-align: right;
 }
-.heroText{
-    padding-right:0;
-}
+
 }
 @media(min-width:768px) and (max-width:1024px){
 body{

@@ -7,8 +7,16 @@ jQuery(function ($) {
     rtl: true,
     dots: true,
     items: 1,
-    nav:true
+    responsive:{
+      0:{
+        nav:false,
+      },
+      600:{
+        nav:true
+      }
+    }
   });
+  
   $(".gallerySlider").owlCarousel({
     autoplay: true,
     loop: true,

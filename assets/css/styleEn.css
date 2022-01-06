@@ -1199,10 +1199,7 @@ font-size:.9em;
 .hero .contactBtn ,.servicesBtn{
     width:160
 }
-.hero{
-    padding-top:50px;
-    padding-bottom: 100px;
-}
+
 .organizeBtn{
     float:none;
 }
@@ -1214,6 +1211,13 @@ font-size:.9em;
 }
 .heroText{
     padding-left:0;
+    padding-top:50px;
+}
+.heroSliderItem{
+    padding-bottom:100px;
+}
+.heroSlider .owl-dots{
+    bottom:60px;
 }
 }
 @media(min-width:768px) and (max-width:1024px){

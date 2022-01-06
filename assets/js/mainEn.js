@@ -6,7 +6,14 @@ jQuery(function ($) {
     margin: 0,
     dots: true,
     items: 1,
-    nav:true
+    responsive:{
+      0:{
+        nav:false,
+      },
+      600:{
+        nav:true
+      }
+    }
   });
   $(".gallerySlider").owlCarousel({
     autoplay: true,
