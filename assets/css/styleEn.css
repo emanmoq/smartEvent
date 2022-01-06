@@ -248,31 +248,27 @@ ul{
 /******** Hero Section **********/
 .hero{
     position: relative;
-    padding-top:200px;
-    padding-bottom: 190px;
-    position: relative;
 }
-.heroObject {
+
+.heroSliderItem {
+    background-image: url("../images/innerBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 200px;
+}
+.heroSliderItem:before{
     position: absolute;
-    left: 0;
-    top: -57px;
-    width: 16%;
-    z-index: -1;
-    transform: rotate(
-        255deg);}
-.heroObject2{
-    top:auto;
-    bottom: 0;
-    right:0;
-    left:auto;
-    width:30%;
-    transform: rotate3d(0, 1, 0, 
-180deg);
+    content:"";
+    width: 100%;height: 100%;
+    background-color:rgba(0,0,0,.8);
+    z-index:-1;
 }
 .heroSlider .owl-dots{
     position: absolute;
     width: 100%;
-    bottom: -56px;
+    bottom: 120px;
     text-align: center;
 }
 .heroSlider .owl-dot{
@@ -287,22 +283,28 @@ ul{
 
 }
 .heroText{
-    padding-left:100px
+    padding-top:200px;
+
+    text-align: center;
 }
 .heroText span{
-    color:#ac2ca1;
+    background-color:#ac2ca1;
     font-size:1.6875em;
+    padding:3px 5px;
     margin-bottom: 40px;
+    color:white;
     font-family: "Bahij_TheSansArabic-Light";
+    border-radius: 5px;
 }
 .heroText h2{
     font-size:3.5em  ;
-    color:#46484b;
-    margin-bottom: 30px;;
+    color:white;
+    margin-bottom: 30px;
+    margin-top: 15px;
 
 }
 .heroText h1{
-    color:#46484b;
+    color:white;;
     font-size: 3.375em;
     font-family: "Bahij_TheSansArabic-SemiBold";
     margin-bottom: 30px;;
@@ -315,14 +317,16 @@ ul{
     margin-right:17px;
     float: none;
     line-height: 42px;;
-
+    border:0;
+}
+.hero .contactBtn:hover{
+    background-color: white;;
 }
 .servicesBtn{
 width:179px;
 height:55px;
 background-color: #f69c01;
 color:white;
-border:1px solid #f69c01;
 transition: all .5s;
 line-height: 42px;
 border-radius:  0;
@@ -330,11 +334,12 @@ font-family: "Bahij_TheSansArabic-SemiBold";
 
 }
 .servicesBtn:hover{
-    background-color: transparent;
+    background-color: white;
     color:#f69c01;
     transition: all .5s;;
 
 }
+
 /****** Introduction Section ******/
 .introSection{
     padding:200px 0;
@@ -343,7 +348,7 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     background-repeat: no-repeat;
     z-index: 1;
     background-color:transparent;
-    margin-top:-225px;
+    margin-top:-190px;
 }
 .introSection:before{
     position: absolute;
