@@ -284,6 +284,26 @@ ul{
 .heroSlider .owl-dot.active{
     background-color:#ac2ca1 !important
 
+}                                                                               
+.heroSlider .owl-nav{
+    position: absolute;
+    top:45%;
+    width:100%;
+}
+.heroSlider.owl-carousel .owl-nav button.owl-next, .heroSlider.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    right:10%;
+}
+.heroSlider .owl-nav button:hover span{
+    color:#ac2ca1
+}
+.heroSlider .owl-nav button span{
+    font-size:70px;
+    color:white;
+}
+.heroSlider.owl-carousel .owl-nav button.owl-next{
+    right:auto;
+    left:10%;
 }
 .heroText{
     padding-top:200px;
@@ -370,7 +390,6 @@ font-family: "Bahij_TheSansArabic-SemiBold";
     background-repeat: no-repeat;
     z-index: 1;
     background-color:transparent;
-    margin-top:-190px;
 }
 .introSection:before{
     position: absolute;
@@ -1232,9 +1251,7 @@ font-size:.9em;
 body{
     font-size:12px;
 }
-.introSection{
-    margin-top: -137px;
-}
+
 .hero{
     padding-bottom:150px;
 }
@@ -1299,6 +1316,5 @@ header{
 }
 .introSection {
     padding: 124px 0;
-    margin-top:-150px
 }
 }
