@@ -266,7 +266,7 @@ ul{
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    padding-bottom: 200px;
+    height: 100%;
 }
 .heroSliderItem:before{
     position: absolute;
@@ -276,6 +276,10 @@ ul{
     z-index:-1;
     top:0;
     left:0;
+}
+.heroSlider{
+    height: 680px;
+    overflow: hidden;
 }
 .heroSlider .owl-dots{
     position: absolute;
@@ -1003,6 +1007,8 @@ padding-bottom: 60px;;
         width:43%;
         margin-bottom: 20px;
     }
+    .heroSlider {
+        height: 500px;}
 .heroText{
     padding-top:50px;
     padding-bottom:100px;
